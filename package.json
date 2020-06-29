@@ -1,0 +1,27 @@
+{
+  "name": "videoparty",
+  "version": "1.0.0",
+  "description": "A web application that lets you watch videos in a synchronized way with anyone.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devPablo/VideoParty.git"
+  },
+  "author": "Pablo Bonilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devPablo/VideoParty/issues"
+  },
+  "homepage": "https://github.com/devPablo/VideoParty#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
