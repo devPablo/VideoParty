@@ -13,6 +13,7 @@ controlPause.addEventListener('click', () => {
 });
 
 video.addEventListener('seeked', e => {
+    console.log('Changed');
     socket.emit('changeVideoTime', e.srcElement.currentTime);
 })
 

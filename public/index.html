@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/videoparty.css">
     <title>VideoParty</title>
 </head>
 <body>
-    <h1>VideoParty</h1>
     <!-- https://storage.googleapis.com/hale-sequence-250703.appspot.com/Goblin2.mp4 -->
 
-    <video id="mainVideo" src="https://storage.googleapis.com/hale-sequence-250703.appspot.com/Goblin2.mp4" controls></video>
+    <div class="vp_main">
+        <div class="justify-content-center vp_video-maincontainer">
+            <video id="mainVideo" src="https://storage.googleapis.com/hale-sequence-250703.appspot.com/Goblin2.mp4">
+        </div>
 
-    <button type="button" id="controlPlay">Play</button>
-    <button type="button" id="controlPause">Pause</button>
+        <div class="justify-content-center vp_controls-maincontainer">
+            <!-- Progress bar -->
+            <div class="vp_progress-container">
+                <span>Progress bar</span>
+            </div>
+
+            <!-- Video controls -->
+            <div class="vp_controls-container">
+                <button type="button" id="controlPlay">Play</button>
+                <button type="button" id="controlPause">Pause</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <button type="button" id="controlPlay">Play</button>
+    <button type="button" id="controlPause">Pause</button> -->
+
+
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="./js/video_handler.js"></script>
+    <script src="./js/controls_handler.js"></script>
 </body>
 </html>
