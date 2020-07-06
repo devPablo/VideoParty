@@ -1,6 +1,7 @@
 .vp_main {
     background-color: #000;
     position: relative;
+    z-index: 999;
 }
 
 .vp_video-maincontainer {
@@ -13,7 +14,7 @@
     width: 100%;
     height: 15vh;
     max-height: 15vh;
-    background-color: transparent;
+    background-color: red;
 }
 
 .vp_progress-container {
@@ -22,4 +23,19 @@
 
 .vp_controls-container {
     position: relative;
+}
+
+.vp_controls-control-container {
+    padding: 0.5rem;
+}
+
+.vp_control {
+    color: #FFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.vp_control:hover {
+    transform: scale(1.15);
 }
